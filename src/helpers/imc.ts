@@ -21,7 +21,7 @@ export const calculateImc = (h: number, w: number) =>{
 
     for(let i in levels){
         if(imc >= levels[i].imc[0] && imc <= levels[i].imc[1]){
-            levels[i].youImc = imc;
+            levels[i].youImc = parseFloat(imc.toFixed(2));
             return levels[i];
         }
     }
