@@ -49,16 +49,17 @@ const App = () => {
           />
 
           <button onClick={handleCalculateButton} >Calcular</button>
-         
-          
-          </div>
+        </div>
+
         <div className={styles.rightSide}>
           <div className={styles.grid}>
             {levels.map((item, key) => (
               <GridItem key={key} item={item}/>
             ))}
           </div>
+
         </div>
+        
       </div>
         
     </div>
